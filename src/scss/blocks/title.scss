@@ -6,31 +6,41 @@
   align-items: center;
   width: $screen-xxs;
 
-  @media(min-width: $screen-xs) {
+  @media (min-width: $screen-xs) {
     width: $screen-xs;
     margin-bottom: 5px;
   }
 
-  @media(min-width: $screen-sm) {
+  @media (min-width: $screen-sm) {
     order: 2;
     display: inline-flex;
     width: 320px;
     margin-bottom: 5px;
   }
 
+  @media (min-width: $screen-lg) {
+    width: 530px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
   &__text {
     text-transform: uppercase;
-    font-family: 'Bender', Arial, sans-serif;
+    font-family: Bender, Arial, sans-serif;
     font-weight: 800;
     line-height: 1em;
     font-size: 32px;
 
-    @media(min-width: $screen-xs) {
+    @media (min-width: $screen-xs) {
       font-size: 36px;
     }
 
-    @media(min-width: $screen-sm) {
+    @media (min-width: $screen-sm) {
       font-size: 32px;
+    }
+
+    @media (min-width: $screen-lg) {
+      font-size: 50px;
     }
 
     &-bigger {
@@ -43,7 +53,7 @@
       background-color: #f1c801;
       transform: translateX(-100%);
 
-      @media(min-width: $screen-sm) {
+      @media (min-width: $screen-lg) {
         background-color: $main-color;
       }
     }
@@ -51,12 +61,18 @@
 
 
   &__img {
-    height: 110px;
     width: auto;
+    height: 110px;
     margin-right: 5px;
-    @media(min-width: $screen-xs) {
+
+    @media (min-width: $screen-xs) {
       height: 120px;
       margin-right: 10px;
+    }
+
+    @media (min-width: $screen-lg) {
+      height: 210px;
+      margin-right: 15px;
     }
 
     img {

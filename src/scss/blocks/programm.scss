@@ -2,16 +2,21 @@
   position: relative;
   width: $screen-xxs;
   background-color: #fff;
-  padding: 10px 10px 40px 10px;
+  padding: 10px 10px 40px;
 
-  @media(min-width: $screen-xs) {
+  @media (min-width: $screen-xs) {
     width: $screen-xs;
-    padding: 15px 15px 50px 15px;
+    padding: 15px 15px 50px;
   }
 
-  @media(min-width: $screen-sm) {
+  @media (min-width: $screen-sm) {
     width: calc(#{$screen-sm} - 320px);
-    padding: 25px 18px 80px 18px;
+    padding: 25px 18px 80px;
+  }
+
+  @media (min-width: $screen-lg) {
+    width: calc(#{$screen-lg} - 530px);
+    padding: 50px 25px 90px;
   }
 
   &__head {
@@ -19,11 +24,11 @@
     margin-bottom: 15px;
     text-transform: uppercase;
 
-    @media(min-width: $screen-xs) {
+    @media (min-width: $screen-xs) {
       font-size: 30px;
     }
 
-    @media(min-width: $screen-sm) {
+    @media (min-width: $screen-sm) {
       position: absolute;
       display: block;
       left: -305px;
@@ -31,18 +36,31 @@
       width: 305px;
       font-size: 22px;
     }
+
+    @media (min-width: $screen-lg) {
+      left: -500px;
+      top: 270px;
+      width: 500px;
+      font-size: 42px;
+    }
   }
 
   &__paragraph {
     font-size: 14px;
     padding-bottom: 8px;
 
-    @media(min-width: $screen-xs) {
+    @media (min-width: $screen-xs) {
       font-size: 18px;
     }
 
-    @media(min-width: $screen-sm) {
+    @media (min-width: $screen-sm) {
       font-size: 20px;
+      padding-bottom: 12px;
+    }
+
+    @media (min-width: $screen-lg) {
+      font-size: 24px;
+      padding-bottom: 20px;
     }
 
     em {
@@ -63,21 +81,26 @@
     padding-left: 8px;
     padding-bottom: 8px;
 
-    @media(min-width: $screen-xs) {
+    @media (min-width: $screen-xs) {
       font-size: 18px;
       padding-left: 12px;
     }
 
-    @media(min-width: $screen-sm) {
+    @media (min-width: $screen-sm) {
       font-size: 20px;
       padding-left: 14px;
+    }
+
+    @media (min-width: $screen-lg) {
+      font-size: 20px;
+      padding-left: 15px;
     }
 
     &::before {
       content: '–';
       display: block;
       position: absolute;
-      left: 0px;
+      left: 0;
     }
   }
 }
