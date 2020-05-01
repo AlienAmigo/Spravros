@@ -5,13 +5,23 @@
   align-items: center;
   width: $screen-xxs;
 
+  @media(min-width: $screen-xs) {
+    width: $screen-xs;
+    margin-bottom: 5px;
+  }
+
   &__text {
     text-transform: uppercase;
     font-family: 'Bender', Arial, sans-serif;
     font-weight: 800;
     line-height: 1em;
+    font-size: 32px;
+    @media(min-width: $screen-xs) {
+      font-size: 36px;
+    }
 
     &-bigger {
+      display: block;
       font-size: 1.2em;
     }
 
@@ -27,7 +37,10 @@
     height: 110px;
     width: auto;
     margin-right: 5px;
-    // box-shadow: -10px 5px 10px -7px rgba(0,0,0,0.75);
+    @media(min-width: $screen-xs) {
+      height: 120px;
+      margin-right: 10px;
+    }
 
     img {
       height: 100%;
