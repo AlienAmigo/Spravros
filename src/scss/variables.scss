@@ -6,11 +6,16 @@ $gray-dark:           #231f20;
 
 $text-color:          $gray-dark;
 
-$font-family:         -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+$font-family:         GothamPro, Arial, sans-serif;
 $font-size:           14px;
 $line-height:         1.4;
 
+$screen-xxs:          320px;
 $screen-xs:           480px;
 $screen-sm:           768px;
 $screen-md:           992px;
 $screen-lg:           1200px;
+
+* {
+  box-sizing: border-box;
+}

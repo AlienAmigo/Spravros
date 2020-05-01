@@ -1,0 +1,41 @@
+.programm {
+  width: $screen-xxs;
+  background-color: #fff;
+  padding: 10px 10px 40px 10px;
+
+  &__head {
+    font-size: 22px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+
+  &__paragraph {
+    font-size: 14px;
+    padding-bottom: 8px;
+
+    em {
+      font-style: normal;
+      color: $warning-color;
+    }
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__list-item {
+    position: relative;
+    font-size: 14px;
+    padding-left: 8px;
+    padding-bottom: 8px;
+
+    &::before {
+      content: '–';
+      display: block;
+      position: absolute;
+      left: 0px;
+    }
+  }
+}

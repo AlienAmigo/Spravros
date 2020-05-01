@@ -1,0 +1,37 @@
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: $screen-xxs;
+
+  &__text {
+    text-transform: uppercase;
+    font-family: 'Bender', Arial, sans-serif;
+    font-weight: 800;
+    line-height: 1em;
+
+    &-bigger {
+      font-size: 1.2em;
+    }
+
+    &-sign {
+      display: inline-block;
+      background-color: #f4e200;
+      transform: translateX(-100%);
+    }
+  }
+
+
+  &__img {
+    height: 110px;
+    width: auto;
+    margin-right: 5px;
+    // box-shadow: -10px 5px 10px -7px rgba(0,0,0,0.75);
+
+    img {
+      height: 100%;
+      width: auto;
+    }
+  }
+}
