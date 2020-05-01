@@ -1,9 +1,9 @@
 .sr {
-  order: 2;
+  order: 1;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   height: 30px;
   padding-top: 6px;
   border-top: 3px solid #fff;
@@ -13,11 +13,23 @@
     height: 32px;
   }
 
+  @media(min-width: $screen-xs) {
+    height: 34px;
+  }
+
   &__wrap {
     width: $screen-xxs;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+
+      @media(min-width: $screen-xs) {
+        width: $screen-xs;
+      }
+
+      @media(min-width: $screen-sm) {
+        width: $screen-sm;
+      }
   }
 
   &__text {
@@ -29,6 +41,10 @@
     letter-spacing: 0.5px;
 
     @media(min-width: $screen-xs) {
+      font-size: 16px;
+    }
+
+    @media(min-width: $screen-sm) {
       font-size: 16px;
     }
   }
@@ -43,10 +59,17 @@
     padding: 3px;
     background: #fff;
     transform: translateY(-75%);
+
     @media(min-width: $screen-xs) {
       width: 50px;
       height: 50px;
       padding: 5px;
+    }
+
+    @media(min-width: $screen-sm) {
+      width: 55px;
+      height: 55px;
+      padding: 7px;
     }
 
     img {

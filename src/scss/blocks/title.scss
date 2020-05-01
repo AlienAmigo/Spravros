@@ -1,4 +1,5 @@
 .title {
+  order: 0;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -10,14 +11,26 @@
     margin-bottom: 5px;
   }
 
+  @media(min-width: $screen-sm) {
+    order: 2;
+    display: inline-flex;
+    width: 320px;
+    margin-bottom: 5px;
+  }
+
   &__text {
     text-transform: uppercase;
     font-family: 'Bender', Arial, sans-serif;
     font-weight: 800;
     line-height: 1em;
     font-size: 32px;
+
     @media(min-width: $screen-xs) {
       font-size: 36px;
+    }
+
+    @media(min-width: $screen-sm) {
+      font-size: 32px;
     }
 
     &-bigger {
@@ -27,8 +40,12 @@
 
     &-sign {
       display: inline-block;
-      background-color: #f4e200;
+      background-color: #f1c801;
       transform: translateX(-100%);
+
+      @media(min-width: $screen-sm) {
+        background-color: $main-color;
+      }
     }
   }
 
