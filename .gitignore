@@ -4,7 +4,6 @@ _arc/
 bower_components/
 node_modules/
 .vscode/
-build/
 .DS_Store
 *.log
 *.sublime-*
