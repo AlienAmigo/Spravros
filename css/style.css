@@ -39,6 +39,7 @@
   font-display: block; }
 
 .page {
+  min-height: 100vh;
   font-family: GothamPro, Arial, sans-serif;
   color: #231f20;
   margin: 0;
@@ -184,9 +185,6 @@
       background-color: #f1c801;
       -webkit-transform: translateX(-100%);
               transform: translateX(-100%); }
-      @media (min-width: 1200px) {
-        .title__text-sign {
-          background-color: #efb600; } }
   .title__img {
     width: auto;
     height: 110px;
