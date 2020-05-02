@@ -53,10 +53,6 @@
       display: inline-block;
       background-color: #f1c801;
       transform: translateX(-100%);
-
-      @media (min-width: $screen-lg) {
-        background-color: $main-color;
-      }
     }
   }
 
